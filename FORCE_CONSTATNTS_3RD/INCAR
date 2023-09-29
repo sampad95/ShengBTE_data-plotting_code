@@ -1,0 +1,58 @@
+#--------------system initials---------------
+   SYSTEM = K4BeAs2
+   ISTART = 0
+   ICHARG = 2
+#   ISPIN = 2 
+#   MAGMOM = 4
+#   GGA = 91
+#   ISYM = 2
+#   SYMPREC = 0.01
+#------------convergence criteria------------
+   PREC = Accurate
+#   LELMIN = 6
+#    LELM = 40    ! no. of electronic steps 
+#   LELMDL = -3
+   EDIFF  =  0.000001           !the global break condition for the electronic SC-loop
+#   EDIFFG =  0.001             !the break condition for the ionic relaxation loop
+   NSW = 0   ! maximum no. of ionic steps
+   ENCUT = 400 
+#--------------DOSCAR control----------------
+#   EMIN = -60
+#   EMAX = 10
+#    RWIGS = 1.566 0.820
+#   NBANDS = 20
+   LORBIT = 11 
+   NPAR = 1
+#   LSORBIT = .TRUE. !relativistic effect
+   ISMEAR = 0 
+   SIGMA = 0.01
+#---------------Relaxation method------------
+   IBRION = -1   ! ionic relaxation 0=MD 2=CG
+   IALGO = 38
+   LREAL = .FALSE.
+#-------------for MD ONLY--------------------
+#   POTIM = 0.5
+#   SMASS = -2
+#   TEBEG = 1000
+#   TEEND = 1000
+#------for bulk material what to relax--------
+#   ISIF = 3 
+#------for magnetic studies------------------
+#   LDIAG =
+#   AMIX = 0.5        
+#   BMIX = 1.5
+#  AMIX_MAG = 2.0
+#  BMIX_MAG = 1.5
+#   FERDO =
+#   FERWE =
+#---------------what to write----------------
+    LCHARG = .FALSE.
+    LWAVE = .FALSE.
+#  NWRITE=2
+#---------------approximate vdW correction methods------------------------------
+    LVDW = .TRUE.
+    IVDW = 11               ! choice of van der Waals(vdW)correction method
+#-------------vaccum potential calculation---------
+#    LVHAR=.TRUE.
+#    LELF= .TRUE.
+#
